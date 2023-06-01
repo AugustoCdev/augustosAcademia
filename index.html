@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<style>
+    header h1{
+        background-color: blue;
+        color: #fff;
+        text-align: center;
+        margin-bottom:30px;
+        font-family: 'Pacifico', cursive;
+        font-size: 50px;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon{
+            background-color: blue;
+            border-radius: 60%;
+            position: absolute;
+            margin-top: 400px;
+        }
+
+        .card-title{
+            color: rgb(175, 182, 199);
+            font-family: 'Pacifico', cursive;
+            margin-bottom: 20px;
+        }
+
+        .card-subtitle{
+            color: rgb(159, 179, 227);
+            font-weight:bolder;
+            margin-bottom: 10px;
+        }
+
+        .card img{
+            opacity: 50%;
+            height: 100%;
+        }
+
+        .card {
+            block-size: 300px;
+            margin: 10px;
+        }
+
+        .carousel-inner img{
+            border-radius: 10%;
+            border-color: aqua;
+            border-style: solid;
+            margin-bottom: 50px;
+        }
+</style>
+<body>
+        <header>
+        <h1>Augusto's Academia</h1>
+        </header>
+        <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="images/acade.webp" alt="">               
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" class="d-block" src="images/academ.jpg"/>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" class="d-block" src="images/kids.webp"/>
+                </div>
+            
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card text-bg-dark">
+                        <img src="images/bebe.jpg"/>
+                        <div class="card-img-overlay">
+                            <h2 class="card-title">Natação para Bebês</h2>
+                            <h5 class="card-subtitle">Quando o bebê pode começar?</h5>
+                            <p class="card-text">
+                                As aulas de natação para bebês proporcionam muitos benefícios, como auxiliar e estimular o desenvolvimento motor e cognitivo. No entanto, alguns pais ainda têm dúvidas sobre quando colocar os filhos na piscina e quais são esses benefícios. 
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="images/benef.jpeg"/>
+                    <div class="card-img-overlay">
+                        <h2 class="card-title">Benefícios da natação</h2>
+                        <h5 class="card-subtitle">inúmeros benefícios</h5>
+                        <p class="card-text">
+                            A natação é considerada um dos esportes mais completos e que possui menos restrições, o único esporte que pode ser praticado desde bebê e um esporte deve ser praticado por todas as crianças, visando não só os benefícios a saúde, más também proporcionar segurança
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="images/idosos.png"/>
+                    <div class="card-img-overlay">
+                        <h2 class="card-title">Natação para idosos</h2>
+                        <h5 class="card-subtitle">Qual o limite de idade?</h5>
+                        <p class="card-text">
+                            Para a organização das aulas de natação para adultos jovens e idosos nós podemos ter como referência a recomendação semanal da prática de atividade física para a saúde. Para a aptidão aeróbica, a sugestão é que seja feito pelo menos cerca de 30 minutos diários de atividade de média-alta intensidade, 7 dias por semana. 
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
